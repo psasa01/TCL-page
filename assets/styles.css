@@ -460,8 +460,6 @@ iframe {
     }
 }
 
-.kontakt-container {}
-
 @media(max-width: 960px) {
     .kontakt-container {
         width: 100vw !important;
@@ -471,13 +469,24 @@ iframe {
 }
 
 .kontakt-tv-link {
-    margin-bottom: .2em !important;
+    margin-bottom: .3em !important;
     font-size: 1.3em;
 }
 
 @media(max-width: 960px) {
-    .kontakt-tv-link {
-        margin-bottom: .6em !important;
+    .tele {
+        display: none;
+    }
+}
+
+.tele-mobile {
+    display: none;
+    margin-bottom: .6em !important;
+}
+
+@media(max-width: 960px) {
+    .tele-mobile {
+        display: block;
     }
 }
 
