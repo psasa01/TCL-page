@@ -633,3 +633,11 @@ iframe {
 .partneri strong {
     color: white !important;
 }
+
+
+@media(max-width: 960px) {
+    .terabajt {
+        margin-top: -3.2em;
+    }
+}   
+
