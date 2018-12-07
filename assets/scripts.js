@@ -36,6 +36,12 @@ $('a.menu').click(function () {
 });
 
 new fullpage('.fpage', {
+
+	afterRender: function () {
+		setInterval(function () {
+			$.fn.fullpage.moveSlideRight();
+		}, 1000);
+	},
 	//options here
 	menu: '#myMenu',
 	lockAnchors: false,
@@ -48,9 +54,15 @@ new fullpage('.fpage', {
 	anchors: ['section0', 'section1', 'section2', 'section3'],
 	autoScrolling: true,
 	scrollHorizontally: true,
-	loopHorizontal: false,
-	responsiveWidth: 960
+	continuousHorizontal: true,
+	loopHorizontal: true,
+	responsiveWidth: 960,
+	sectionsColor: ['#1bbc9b'],
+	loopBottom: true
+	
 });
+
+
 
 //methods
 fullpage_api.setAllowScrolling(true);
