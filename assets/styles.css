@@ -144,6 +144,26 @@ body::-webkit-scrollbar {
     color: red
 } */
 
+.bijeli-logo {
+    position: absolute;
+    width: 10em;
+    height: auto;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.bijeli-logo img {
+    width: 100%;
+}
+
+@media (max-width: 960px) {
+    .bijeli-logo {
+        display: none;
+    }
+}
+
 .tcl-logo {
     height: 4em;
 }
@@ -213,6 +233,10 @@ a:active {
     padding-top: 1em;
 }
 
+#product-details h1 {
+    font-weight: 200;
+}
+
 .product-tags {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -226,8 +250,14 @@ a:active {
     border: 1px solid #aaa;
     border-radius: 1em;
     margin-right: 1em;
-    font-size: 1em;
+    font-size: .9em;
     text-align: center;
+}
+
+@media(max-width: 960px) {
+    .product-tag {
+        font-size: .8em !important
+    }
 }
 
 .product-img img {
