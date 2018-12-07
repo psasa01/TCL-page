@@ -5,6 +5,7 @@ if ($(window).width() > 960) {
 	$('#fullpage').addClass('nofpage');
 }
 
+
 $('.hamburger').click(function () {
 	$('.hamburger').toggleClass('is-active');
 	$('.mobile-links').toggleClass('mobile-links-active');
@@ -39,8 +40,8 @@ new fullpage('.fpage', {
 
 	afterRender: function () {
 		setInterval(function () {
-			$.fn.fullpage.moveSlideRight();
-		}, 1000);
+			fullpage_api.moveSlideRight();
+		}, 8000);
 	},
 	//options here
 	menu: '#myMenu',
@@ -56,10 +57,8 @@ new fullpage('.fpage', {
 	scrollHorizontally: true,
 	continuousHorizontal: true,
 	loopHorizontal: true,
-	responsiveWidth: 960,
-	sectionsColor: ['#1bbc9b'],
-	loopBottom: true
-	
+	responsiveWidth: 960
+
 });
 
 
