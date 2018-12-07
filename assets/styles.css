@@ -580,3 +580,7 @@ iframe {
 .social-links a {
     margin-right: .4em;
 }
+
+.partneri strong {
+    color: white !important;
+}
