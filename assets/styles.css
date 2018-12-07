@@ -144,22 +144,41 @@ body::-webkit-scrollbar {
     color: red
 } */
 
-.bijeli-logo {
+.footer-new {
     position: absolute;
-    width: 10em;
-    height: auto;
-    bottom: 1em;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100vw;
+    height: 4em;
+    bottom: 0em;
+    left: 0em;
+    background-color: rgba(19, 37, 59, 0.918);
     z-index: 999;
 }
 
-.bijeli-logo img {
-    width: 100%;
+.footer-new-text {
+    position: absolute;
+    right: 2em;
+    bottom: 0em;
+    color: #999;
+    opacity: .5;
+}
+
+
+@media (max-width: 1444px) {
+    .footer-new-text {
+        font-size: .8em;
+    }
+}
+
+.footer-new img {
+    position: absolute;
+    bottom: -.1em;
+    height: 6em;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 @media (max-width: 960px) {
-    .bijeli-logo {
+    .footer-new {
         display: none;
     }
 }
@@ -526,17 +545,17 @@ iframe {
     bottom: 6em;
     font-weight: 200;
     color: rgb(57, 105, 163);
+    z-index: 999 !important;
 }
 
 .avtera {
     color: white !important;
-    opacity: .4;
     transition: all .6 ease;
 }
 
 .avtera:hover {
     color: white !important;
-    opacity: 1;
+    opacity: .8;
 }
 
 .purple-key {
@@ -550,7 +569,7 @@ iframe {
 .footer img {
     position: absolute;
     right: 2em;
-    bottom: 3em
+    bottom: 4em
 }
 
 @media (max-width: 960px) {
