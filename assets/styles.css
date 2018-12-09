@@ -67,6 +67,8 @@ body::-webkit-scrollbar {
     left: 0;
     background-color: #0d1d2b;
     z-index: 999;
+    padding-top: .2, 5em;
+    padding-bottom: .2em;
 }
 
 .mobile-links ul li {
