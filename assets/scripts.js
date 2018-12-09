@@ -50,7 +50,7 @@ new fullpage('.fpage', {
 	navigationPosition: 'right',
 	navigationTooltips: ['firstSlide', 'secondSlide'],
 	showActiveTooltip: false,
-	slidesNavigation: false,
+	slidesNavigation: true,
 	slidesNavPosition: 'bottom',
 	anchors: ['section0', 'section1', 'section2', 'section3'],
 	autoScrolling: true,
