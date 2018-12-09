@@ -733,6 +733,14 @@ iframe {
     }
 }
 
+@media (height: 859px) {
+    .container-fluid {
+        width: 80% !important;
+        margin-left: 10% !important;
+        left: !important;
+    }
+}
+
 .social-media {
     position: absolute;
     right: 7em;
