@@ -7,6 +7,10 @@
     --red: #D72027 !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif !important;
     color: white !important;
@@ -170,7 +174,7 @@ body::-webkit-scrollbar {
 .footer-new {
     position: absolute;
     width: 100vw;
-    height: 4em;
+    height: 4.8em;
     bottom: 0em;
     left: 0em;
     background-color: rgba(19, 37, 59, 0.918);
@@ -194,7 +198,7 @@ body::-webkit-scrollbar {
 .footer-new img {
     position: absolute;
     bottom: -.1em;
-    height: 6em;
+    height: 8em !important;
     left: 50%;
     transform: translateX(-55%)
 }
@@ -301,6 +305,7 @@ a:active {
 
 #product-details {
     padding-top: 1em;
+    padding-left: 1em;
 }
 
 #product-details h1 {
@@ -330,15 +335,21 @@ a:active {
     }
 }
 
-.product-img img {
+.product-img {
     width: 100%;
     left: 0;
+    margin-left: 0;
+}
+
+.product-img img {
+    left: 0;
+    width: 90%;
 }
 
 @media(max-width: 960px) {
     .product-img img {
-        max-width: 100%;
-        margin-left: 2em !important;
+        width: 95%;
+        margin-left: 2.5%;
     }
 }
 
@@ -406,11 +417,13 @@ a:active {
 .saznajte-vise {
     margin-top: 2em;
     margin-bottom: 7em !important;
+    background: blue;
 }
 
 @media (max-width: 960px) {
     .saznajte-vise {
-        margin-bottom: 0em !important;
+        margin-bottom: 5em !important;
+        position: relative;
     }
 }
 
@@ -423,13 +436,13 @@ a:active {
 .saznajte-vise button {
     font-size: 1em;
     padding: .4em 2em;
-    width: 100%;
 }
 
 @media (max-width:960px) {
     .saznajte-vise button {
-        width: 100%;
-        margin-bottom: 2em;
+        margin-bottom: 5em;
+        right: 0;
+        position: absolute;
     }
 }
 
@@ -653,8 +666,8 @@ iframe {
 }
 
 .avtera img {
-    max-height: 4em;
-    height: 4em;
+    max-height: 4.6em;
+    height: 4.6em;
 }
 
 .purple-key {

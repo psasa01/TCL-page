@@ -5,6 +5,9 @@ if ($(window).width() > 960) {
 	$('#fullpage').addClass('nofpage');
 }
 
+if ($(window).width() < 960) {
+	$('.saznajte-vise').removeClass('float-right');
+}
 
 $('.hamburger').click(function () {
 	$('.hamburger').toggleClass('is-active');
