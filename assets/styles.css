@@ -343,7 +343,7 @@ a:active {
 
 .product-img img {
     left: 0;
-    width: 90%;
+    width: 85%;
 }
 
 @media(max-width: 960px) {
@@ -361,6 +361,12 @@ a:active {
 .product-cijena p {
     font-size: .8em;
     margin-top: 1em;
+}
+
+@media(max-width: 960px) {
+    .product-cijena p {
+        font-size: .7em;
+    }
 }
 
 .product-cijena h4 {
@@ -524,7 +530,7 @@ iframe {
 
 @media(max-width: 960px) {
     iframe {
-        top: 2.5em;
+        top: 3em;
         height: 100%;
         pointer-events: auto;
     }
@@ -693,7 +699,7 @@ iframe {
 .footer img {
     position: absolute;
     right: 2em;
-    bottom: 4em
+    bottom: 4.67em
 }
 
 @media (max-width: 960px) {
