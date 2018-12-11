@@ -44,7 +44,7 @@ new fullpage('.fpage', {
 	afterRender: function () {
 		setInterval(function () {
 			fullpage_api.moveSlideRight();
-		}, 8000);
+		}, 15000);
 	},
 	//options here
 	menu: '#myMenu',
