@@ -174,7 +174,7 @@ body::-webkit-scrollbar {
 .footer-new {
     position: absolute;
     width: 100vw;
-    height: 4.8em;
+    height: 4.5em;
     bottom: 0em;
     left: 0em;
     background-color: rgba(19, 37, 59, 0.918);
@@ -187,6 +187,7 @@ body::-webkit-scrollbar {
     bottom: 0em;
     color: #999;
     opacity: .5;
+    font-size: .9em
 }
 
 @media (max-width: 1444px) {
@@ -672,8 +673,8 @@ iframe {
 }
 
 .avtera img {
-    max-height: 4.6em;
-    height: 4.6em;
+    max-height: 4.2em;
+    height: 4.2em;
 }
 
 .purple-key {
