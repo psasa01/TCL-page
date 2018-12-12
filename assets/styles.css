@@ -377,6 +377,12 @@ a:active {
     padding: 0em;
 }
 
+@media (max-width: 960px) {
+    .product-cijena h4 {
+        font-size: 1.2em;
+    }
+}
+
 .product-description p {
     font-size: .9em;
     font-weight: 200;
