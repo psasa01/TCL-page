@@ -199,20 +199,21 @@ body::-webkit-scrollbar {
 .footer-new-garancija {
     position: absolute;
     left: 1em;
-    bottom: -0.5em;
-    color: #ccc;
+    bottom: -0.35em;
+    color: #fff;
     font-size: 1em;
+    font-weight: 200;
+    line-height: 1.3em;
 }
 
 @media (max-width: 1440px) {
     .footer-new-garancija {
         font-size: .8em;
     }
-} 
+}
 
 .footer-new-garancija a {
     color: white !important;
-  
 }
 
 .footer-new-garancija a:hover {
@@ -226,40 +227,40 @@ body::-webkit-scrollbar {
 }
 
 @media(max-width: 1440px) {
-    .btn-garancija {    
+    .btn-garancija {
         left: 25em;
         bottom: .7em;
     }
 }
 
 @media(max-width: 1280px) {
-    .btn-garancija {  
+    .btn-garancija {
         font-size: .9em;
-        left: 30.7em;
+        left: 27em;
     }
 }
 
 .garancija-img {
     position: absolute;
     right: 2em;
-    
 }
 
 .garancija-img img {
-    border-radius: .5em; 
+    border-radius: .5em;
 }
 
 @media (max-width: 960px) {
     .garancija-img {
         display: none;
-        
+        /* transform: scale(.7);
+        right: 0;
+        top: -2.5em; */
     }
 }
 
 @media (max-width: 960px) {
     .garancija-img-mobile {
         display: block;
-        
     }
 }
 
@@ -453,6 +454,18 @@ a:active {
 .product-description p {
     font-size: .9em;
     font-weight: 200;
+}
+
+@media(max-width: 1280px) {
+    .product-description p {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 1280px) {
+    .product-description brp {
+        display: none;
+    }
 }
 
 .product-description p span {
@@ -790,6 +803,103 @@ iframe {
     opacity: .5;
     text-align: center;
     margin-bottom: -2em;
+}
+
+.garancija-mobile {
+    position: fixed;
+    bottom: top;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+@media(min-width: 960px) {
+    .garancija-mobile {
+        display: none;
+    }
+}
+
+.garancija-mobile-content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    line-height: 1em;
+    background-color: #071828;
+    height: 7em;
+    width: 100%;
+    z-index: 1;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.garancija-active {
+    transform: translateY(10%);
+}
+
+/* .garancija-mobile-content {
+    position: absolute;
+    display: inline-flex;
+    opacity: 1;
+    z-index: 999;
+    background: #fff;
+    bottom: 3.5em;
+    left: 0;
+    width: 100%;
+    min-height: 4.5em;
+    height: 4.5em;
+    background-color: #071828;
+} */
+
+.garancija-mobile-text {
+    position: absolute;
+    font-size: .8em;
+    font-weight: 200;
+    color: white;
+    top: 0em;
+    padding: 1em;
+    width: 100%;
+    height: 3.5em;
+    text-align: right;
+}
+
+.garancija-mobile img {
+    position: absolute;
+    transform: scale(.75);
+    z-index: 9999;
+    display: block;
+    padding: .4em;
+    right: -1.2em;
+    bottom: 2.85em;
+    /* background-color: #07182833; */
+    border-top-left-radius: 1.5em;
+}
+
+.garancija-buttons a {
+    color: white !important;
+    font-weight: 300 !important;
+}
+
+.btn-registracija {
+    position: absolute;
+    bottom: .2em;
+    left: 2em
+}
+
+.btn-povratak {
+    position: absolute;
+    bottom: .2em;
+    right: 2em;
+}
+
+.otvori-garanciju-hide {
+    display: none !important;
+}
+
+.btn-povratak a {
+    color: white !important;
 }
 
 .footer-mobile a {
