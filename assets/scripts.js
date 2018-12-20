@@ -62,9 +62,9 @@ $(window).scroll(function () {
 	var fromBot = $(document).height() - 100 - $(window).height();
 
 	if ($(this).scrollTop() > 200 && $(document).scrollTop() < fromBot) {
-		$('.otvori-garanciju').removeClass("otvori-garanciju-hide");
+		$('.garancija-mobile').show();
 	} else {
-		$('.otvori-garanciju').addClass("otvori-garanciju-hide");
+		$('.garancija-mobile').hide();
 	}
 });
 
