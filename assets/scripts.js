@@ -39,14 +39,18 @@ $('a.menu').click(function () {
 	$(this).addClass("activen");
 });
 
+// $('.otvori-garanciju').hide();
+
 $('.otvori-garanciju').on('click', function () {
 	$('.garancija-mobile-content').addClass('garancija-active');
 	$('.otvori-garanciju').addClass("otvori-garanciju-hide");
+	// $('.otvori-garanciju').fadeOut('slow');
 })
 
 $('.btn-povratak').on('click', function () {
 	$('.garancija-mobile-content').removeClass('garancija-active');
 	$('.otvori-garanciju').removeClass("otvori-garanciju-hide");
+	// $('.otvori-garanciju').fadeIn('slow');
 })
 
 $('.button-registracija').on('click', function () {
@@ -58,9 +62,9 @@ $(window).scroll(function () {
 	var fromBot = $(document).height() - 100 - $(window).height();
 
 	if ($(this).scrollTop() > 200 && $(document).scrollTop() < fromBot) {
-		$('.garancija-mobile').show();
+		$('.otvori-garanciju').removeClass("otvori-garanciju-hide");
 	} else {
-		$('.garancija-mobile').hide();
+		$('.otvori-garanciju').addClass("otvori-garanciju-hide");
 	}
 });
 
