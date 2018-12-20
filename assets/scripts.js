@@ -63,8 +63,10 @@ $(window).scroll(function () {
 
 	if ($(this).scrollTop() > 200 && $(document).scrollTop() < fromBot) {
 		$('.garancija-mobile').show();
+		$('.otvori-garanciju').removeClass('otvori-garanciju-hide').addClass('otvori-garanciju-show');
 	} else {
 		$('.garancija-mobile').hide();
+		$('.otvori-garanciju').removeClass('otvori-garanciju-show').addClass('otvori-garanciju-hide');
 	}
 });
 

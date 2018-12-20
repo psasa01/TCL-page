@@ -895,7 +895,11 @@ iframe {
 }
 
 .otvori-garanciju-hide {
-    display: none !important;
+    opacity: 0;
+}
+
+.otvori-garanciju-show {
+    opacity: 1;
 }
 
 .btn-povratak a {
