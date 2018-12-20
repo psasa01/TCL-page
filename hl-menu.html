@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        
+        .wrapper {
+            width: 100vw;
+            height: 97vh;
+            position: relative;
+            padding: 0 0 0 0 !important;
+            margin: 0 !important;
+        }
+        .left {
+            position: absolute;
+            left: 0px;
+            top: 0;
+            background: red;
+            width: 50%;
+            height: 100%;
+            transition: all .6s ease;
+            z-index: 1;
+        }
+
+        /* .left:hover {
+            transform: scaleX(1.1);
+            transform-origin: left;
+            z-index: 999;
+        } */
+
+        .right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: blue;
+            width: 50%;
+            height: 100%;
+            z-index: 1;
+            transition: all .6s ease;
+        }
+
+        /* .right:hover {
+            z-index: 999;
+            transform: scaleX(1.1);
+            transform-origin: right;
+        } */
+        
+        .menu {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);        
+            }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .active a{
+            color: yellow !important;
+        }
+
+
+
+    </style>
+
+
+    <div class="wrapper">
+
+        <div class="left">
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#juices">Juices</a>
+                    </li>
+                    <li>
+                        <a href="#smoothies">Smoothies</a>
+                    </li>
+                    <li>
+                        <a href="#proteins">Proteins</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+
+                <div class="tab-content" id="juices">
+                        <h1>JUICESSS</h1>
+                    </div>
+            <div class="tab-content" id="smoothies">
+                <h1>SMOOTHIESSSS</h1>
+            </div>
+            <div class="tab-content" id="proteins">
+                    <h1>PROTEINS</h1>
+                </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+    
+    $(document).ready(function () {
+    $('.menu ul li:first').addClass('active');
+    $('.tab-content:not(:first)').hide();
+    $('.menu ul li a').click(function (event) {
+        event.preventDefault();
+        var content = $(this).attr('href');
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+        $(content).show();
+        $(content).siblings('.tab-content').hide();
+    });
+});
+
+    
+    </script>
+
+</body>
+</html>

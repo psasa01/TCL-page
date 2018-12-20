@@ -196,6 +196,73 @@ body::-webkit-scrollbar {
     }
 }
 
+.footer-new-garancija {
+    position: absolute;
+    left: 1em;
+    bottom: -0.5em;
+    color: #ccc;
+    font-size: 1em;
+}
+
+@media (max-width: 1440px) {
+    .footer-new-garancija {
+        font-size: .8em;
+    }
+} 
+
+.footer-new-garancija a {
+    color: white !important;
+  
+}
+
+.footer-new-garancija a:hover {
+    color: #fdd !important;
+}
+
+.btn-garancija {
+    position: absolute;
+    left: 30em;
+    bottom: .8em;
+}
+
+@media(max-width: 1440px) {
+    .btn-garancija {    
+        left: 25em;
+        bottom: .7em;
+    }
+}
+
+@media(max-width: 1280px) {
+    .btn-garancija {  
+        font-size: .9em;
+        left: 30.7em;
+    }
+}
+
+.garancija-img {
+    position: absolute;
+    right: 2em;
+    
+}
+
+.garancija-img img {
+    border-radius: .5em; 
+}
+
+@media (max-width: 960px) {
+    .garancija-img {
+        display: none;
+        
+    }
+}
+
+@media (max-width: 960px) {
+    .garancija-img-mobile {
+        display: block;
+        
+    }
+}
+
 .footer-new img {
     position: absolute;
     bottom: -.1em;
