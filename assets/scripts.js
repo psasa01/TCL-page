@@ -65,10 +65,10 @@ $(window).scroll(function () {
 
 	if ($(this).scrollTop() > 600 && $(document).scrollTop() < fromBot) {
 		$('.garancija-mobile').show();
-		$('.otvori-garanciju').css('display', 'block');
+		
 	} else {
 		$('.garancija-mobile').hide();
-		$('.otvori-garanciju').css('display', 'none');
+		
 	}
 });
 
