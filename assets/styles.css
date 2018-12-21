@@ -894,12 +894,12 @@ iframe {
     right: 2em;
 }
 
-.otvori-garanciju-hide {
-    opacity: 0;
+.otvori-garanciju {
+    display: none;
 }
 
 .otvori-garanciju-show {
-    opacity: 1;
+    display: block;
 }
 
 .btn-povratak a {
