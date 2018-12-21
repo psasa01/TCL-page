@@ -63,7 +63,7 @@ $(window).scroll(function () {
 
 	var fromBot = $(document).height() - 100 - $(window).height();
 
-	if ($(this).scrollTop() > 600 && $(document).scrollTop() < fromBot) {
+	if ($(this).scrollTop() > 0 && $(document).scrollTop() < fromBot) {
 		$('.garancija-mobile').show();
 		
 	} else {
