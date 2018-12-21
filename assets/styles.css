@@ -247,6 +247,7 @@ body::-webkit-scrollbar {
 
 .garancija-img img {
     border-radius: .5em;
+
 }
 
 @media (max-width: 960px) {
@@ -294,6 +295,7 @@ body::-webkit-scrollbar {
 .fp-slidesNav ul li a span {
     background: white !important;
     opacity: .2;
+    
 }
 
 .tcl-logo {
@@ -870,11 +872,13 @@ iframe {
     transform: scale(.75);
     z-index: 9999;
     display: block;
-    padding: .4em;
+    margin: .4em;
     right: -1.2em;
     bottom: 2.85em;
     /* background-color: #07182833; */
-    border-top-left-radius: 1.5em;
+    border-radius: 1em;
+    box-shadow: black 1px 1px 3px;
+    background: white;
 }
 
 .garancija-buttons a {
