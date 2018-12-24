@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
     top: 0;
     left: 0;
     background-color: #0d1d2b;
-    z-index: 999;
+    z-index: 9999;
     padding-top: .5em;
     padding-bottom: .2em;
 }
@@ -119,7 +119,7 @@ body::-webkit-scrollbar {
     background-color: #535E69;
     height: 11em;
     width: 100%;
-    z-index: 1;
+    z-index: 990;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     -webkit-transition: all .5s;
@@ -301,6 +301,12 @@ body::-webkit-scrollbar {
     height: 4em;
 }
 
+@media(max-width: 330px) {
+    .tcl-logo {
+        height: 2.1em;
+    }
+}
+
 .links {
     right: 0;
 }
@@ -382,6 +388,12 @@ a:active {
     font-weight: 200;
 }
 
+@media(max-width: 330px) {
+    #product-details h1 {
+        font-size: 2.9em;
+    }
+}
+
 .product-tags {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -404,6 +416,7 @@ a:active {
         font-size: .8em !important
     }
 }
+
 
 .product-img {
     width: 100%;
@@ -508,10 +521,17 @@ a:active {
     }
 }
 
+/* @media(max-width: 330px) {
+    .product-properties img {
+        width: 3.0em;
+    }
+} */
+
 .saznajte-vise {
     margin-top: 2em;
     margin-bottom: 7em !important;
     background: blue;
+    z-index: 99;
 }
 
 @media (max-width: 960px) {
@@ -812,7 +832,9 @@ iframe {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 99999;
+    opacity: 0.99;
+    pointer-events: none
 }
 
 @media(min-width: 960px) {
@@ -829,11 +851,12 @@ iframe {
     background-color: #071828;
     height: 7em;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
     -webkit-transform: translateY(120%);
     transform: translateY(120%);
     -webkit-transition: all .5s;
     transition: all .5s;
+    pointer-events: all;
 }
 
 .garancija-active {
@@ -866,6 +889,13 @@ iframe {
     text-align: center;
 }
 
+@media(max-width: 330px) {
+    .garancija-mobile-text {
+        font-size: .72em;
+        line-height: 1.3em;
+    }
+}
+
 .garancija-mobile img {
     position: absolute;
     transform: scale(.75);
@@ -878,11 +908,26 @@ iframe {
     border-radius: 1em;
     box-shadow: black 1px 1px 3px;
     background: white;
+    pointer-events: all;
+}
+
+@media(max-width: 330px) {
+    .garancija-mobile img {
+        transform: scale(.6);
+        margin: .2em;
+        right: -2.7em;
+    }
 }
 
 .garancija-buttons a {
     color: white !important;
     font-weight: 300 !important;
+}
+
+@media(max-width: 330px) {
+    .garancija-buttons a {
+        font-size: .9em;
+    }
 }
 
 .btn-registracija {
@@ -903,9 +948,9 @@ iframe {
     right: 2.5em;
 }
 
-/* @media(max-width: 380px) {
+/* @media(max-width: 330px) {
     .btn-registracija {
-        right: 2em;
+        margin-right: 3em !important;
     }
 } */
 
