@@ -417,7 +417,6 @@ a:active {
     }
 }
 
-
 .product-img {
     width: 100%;
     left: 0;
@@ -805,9 +804,16 @@ iframe {
 }
 
 .footer img {
-    position: absolute;
+    position: sticky;
     right: 2em;
     bottom: 4.67em
+}
+
+@media (min-width: 1400px) {
+    .footer img {
+        position: absolute;
+        right: 2em;
+    }
 }
 
 @media (max-width: 960px) {

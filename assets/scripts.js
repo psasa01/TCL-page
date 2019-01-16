@@ -44,7 +44,7 @@ $('a.menu').click(function () {
 $('.otvori-garanciju').on('click', function () {
 	$('.otvori-garanciju').css('display', 'none');
 	$('.garancija-mobile-content').addClass('garancija-active');
-	
+
 	// $('.otvori-garanciju').fadeOut('slow');
 })
 
@@ -65,10 +65,10 @@ $(window).scroll(function () {
 
 	if ($(this).scrollTop() > 0 && $(document).scrollTop() < fromBot) {
 		$('.garancija-mobile').show();
-		
+
 	} else {
 		$('.garancija-mobile').hide();
-		
+
 	}
 });
 
@@ -93,7 +93,8 @@ new fullpage('.fpage', {
 	scrollHorizontally: true,
 	continuousHorizontal: true,
 	loopHorizontal: true,
-	responsiveWidth: 960
+	responsiveWidth: 960,
+	scrollOverflow: true
 
 });
 
