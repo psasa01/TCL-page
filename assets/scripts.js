@@ -94,7 +94,8 @@ new fullpage('.fpage', {
 	continuousHorizontal: true,
 	loopHorizontal: true,
 	responsiveWidth: 960,
-	scrollOverflow: true
+	scrollOverflow: true,
+	scrollOverflowOptions: { keyBindings: true }
 
 });
 
